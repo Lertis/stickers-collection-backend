@@ -1,19 +1,9 @@
 {
-  "name": "stickers-collection-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "node dist/app.js",
+    "start": "netlify functions:serve",
     "build": "npx tsc",
-    "deploy": "netlify deploy --prod"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/express": "^4.17.1",
-    "typescript": "^5.7.3"
+    "deploy": "netlify deploy --prod",
+    "test": "netlify functions:serve"
   },
   "dependencies": {
     "express": "^4.17.1",

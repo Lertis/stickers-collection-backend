@@ -4,10 +4,8 @@ const app = express();
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.json([
-      {name: "yuriy"}
-    ])
+    res.send("App is running..");
 });
 
-app.use("/", router);
+app.use("/.netlify/functions/app", router);
 module.exports.handler = serverless(app);
