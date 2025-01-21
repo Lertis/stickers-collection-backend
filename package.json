@@ -3,7 +3,7 @@
     "start": "netlify functions:serve",
     "build": "npx tsc",
     "deploy": "netlify deploy --prod",
-    "test": "netlify functions:serve"
+    "functions": "netlify functions:serve"
   },
   "dependencies": {
     "express": "^4.17.1",
